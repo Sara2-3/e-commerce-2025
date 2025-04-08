@@ -1,0 +1,140 @@
+/* Main container styling */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title styling */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Form group styling */
+form div {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+/* Textarea specific styling */
+form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Focus state for inputs */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #07090c;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+/* Error message styling */
+.error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 3px;
+    display: block;
+}
+
+/* Add button container styling */
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Update submit button styling */
+input[type="submit"] {
+    background-color: #2b7a3f;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Cancel button styling */
+.cancel-button {
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+   
+}
+
+.cancel-button a {
+    color: #f3f3f3;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+   
+}
+
+.cancel-button:hover {
+    background-color: #c2e623;
+}
+
+/* Select dropdown styling */
+form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.3em;
+    }
+} 

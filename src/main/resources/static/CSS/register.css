@@ -1,0 +1,87 @@
+/* register.css */
+
+body {
+    background-color: #ffe4e1; /* light pink-peach */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #d87093; /* peach pink text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff0f5; /* soft peach */
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(216, 112, 147, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #db7093; /* deeper peach pink */
+    margin-bottom: 1.5rem;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #c06080;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #f8c8dc;
+    border-radius: 10px;
+    background-color: #fffafc;
+    color: #333;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #ffb6c1; /* light pink */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f28ca3; /* darker on hover */
+}
+
+.error {
+    color: red;
+    font-size: 0.85rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: #d87093;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

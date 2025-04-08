@@ -1,0 +1,270 @@
+/* Banner Styles */
+.sale-banner {
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sale-message {
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.sale-message.active {
+    opacity: 1;
+}
+
+/* New Navigation Styles */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+/* Logo on the left */
+.logo {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Categories centered */
+.categories {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* This centers the categories */
+    position: absolute; /* Take out of normal flow */
+    left: 50%; /* Position at middle of screen */
+    transform: translateX(-50%); /* Center it perfectly */
+}
+
+.categories h2 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.category-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px; /* Space between category items */
+}
+
+.category-list li {
+    margin: 0;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.category-list a:hover {
+    color: #666;
+}
+
+/* Shopping Cart on the right */
+.shopping-cart {
+    font-size: 18px;
+    margin: 0;
+}
+
+.shopping-cart a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.shopping-cart a:hover {
+    color: #666;
+}
+
+/* Product Grid Layout */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-details {
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.product-details h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.product-details p {
+    margin: 8px 0;
+    color: #141414;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Admin controls */
+.admin-controls {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f5f5f5;  /* Light grey background */
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;  /* Center all content */
+    padding: 0 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;  /* Center the list items */
+    gap: 30px;  /* Space between links */
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #666;
+}
+
+.footer p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-section ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.pagination-links {
+    display: flex;
+    gap: 10px;
+}
+
+.page-link {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #f5f5f5;
+}
+
+.page-link.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+} 
